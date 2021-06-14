@@ -7,10 +7,11 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+    lateinit var btnButton: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var btnButton = findViewById<Button>(R. id. btnOne)
+        btnButton = findViewById(R. id. btnOne)
         btnButton.setOnClickListener {
             val intent = Intent(baseContext,MainActivity2::class.java)
             startActivity(intent)

@@ -10,8 +10,8 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
         var btnButton = findViewById<Button>(R.id.btnThree)
-        btnButton.setOnClickListener {
-            val intent = Intent(baseContext, MainActivity4::class.java)
+        btnButton.setOnClickListener{
+            val intent = Intent(baseContext,MainActivity4::class.java)
             startActivity(intent)
         }
     }
